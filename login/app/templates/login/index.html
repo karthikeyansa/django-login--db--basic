@@ -1,0 +1,8 @@
+index
+<form method="POST">
+	{% csrf_token %}
+	{{ form.name }}
+	{{ form.password }}
+	<input type="submit" name="submit" value="Login in"><br>
+	<a href="{% url 'sign' %}">sign in</a>
+</form> 
