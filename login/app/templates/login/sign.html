@@ -1,9 +1,0 @@
-register
-<br>
-{{ msg }}
-<form action="{% url 'sign' %}" method="POST">
-	{% csrf_token %}
-	{{ form.name }}
-	{{ form.password }}
-	<input type="submit" name="submit" value="sign in">
-</form>
